@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementary Science Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+  :root{
+    --primary:#FFC107;
+    --secondary:#000000;
+    --accent:#ffffff;
+  }
+
+  /* Smooth animations */
+  .fade-in{
+    animation: fadeIn 1s ease-in-out;
+  }
+  @keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px)}
+    to{opacity:1; transform:translateY(0)}
+  }
+
+  .hover-card{
+    transition: all 0.3s ease;
+  }
+  .hover-card:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  }
+
+</style>
+</head>
+
+<body class="bg-white text-black">
+
+<!-- Navbar -->
+<header class="sticky top-0 bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center gap-3">
+      <img src="https://lh3.googleusercontent.com/d/1g9dg88-b_yPSBOCA9H21onWOFGxb-u39" class="w-10 h-10" />
+      <h1 class="font-bold text-xl" style="color:#134c73">Elementary Science Academy</h1>
+    </div>
+    <nav class="hidden md:flex gap-6">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="admission.html">Admission</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="text-center py-20 fade-in">
+  <h2 class="text-4xl md:text-6xl font-bold mb-4">ELEMENTARY SCIENCE ACADEMY</h2>
+  <p class="text-lg">JEE • NEET • CUET Coaching</p>
+  <div id="countdown" class="text-xl font-semibold mt-4" style="color:#134c73"></div>
+</section>
+
+<!-- FEATURES -->
+<section class="py-16 px-6 max-w-6xl mx-auto">
+  <h3 class="text-3xl font-bold text-center mb-10">Why Choose Us</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold">Expert Faculty</h4>
+      <p class="text-gray-600">Experienced teachers focused on results.</p>
+    </div>
+
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold">Regular Tests</h4>
+      <p class="text-gray-600">Weekly test series & performance tracking.</p>
+    </div>
+
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold">Mentorship</h4>
+      <p class="text-gray-600">Personal guidance for every student.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- COURSES PREVIEW -->
+<section class="py-16 bg-gray-100">
+  <h3 class="text-3xl text-center font-bold mb-10">Our Courses</h3>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <div class="p-6 bg-white rounded-xl hover-card text-center">
+      <h4 class="font-bold">JEE Preparation</h4>
+      <p>Physics, Chemistry, Mathematics (Advanced + Main)</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-xl hover-card text-center">
+      <h4 class="font-bold">NEET Preparation</h4>
+      <p>Biology, Physics, Chemistry (Complete syllabus)</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-xl hover-card text-center">
+      <h4 class="font-bold">Olympiad Training</h4>
+      <p>NTSE, NSE, IMO, NSO & other competitive exams</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-xl hover-card text-center">
+      <h4 class="font-bold">RBSE Board</h4>
+      <p>Full syllabus coverage with test series (Class 9–12)</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-xl hover-card text-center">
+      <h4 class="font-bold">CBSE Board</h4>
+      <p>NCERT focused preparation + revision strategy</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-xl hover-card text-center">
+      <h4 class="font-bold">CUET Preparation</h4>
+      <p>Subject-wise + general test preparation</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADMISSION CTA -->
+<section class="py-16 px-6 text-center">
+  <h3 class="text-3xl font-bold mb-6">Apply for Admission</h3>
+  <p class="text-gray-600 mb-6">Click below to proceed to the detailed admission page</p>
+  <a href="https://forms.gle/xLFyNXyC7ZxAVRTh6" target="_blank" class="bg-yellow-400 px-6 py-3 rounded-lg font-bold hover:opacity-90">Apply for Admission</a>
+</section>
+
+<!-- CTA -->
+<section class="text-center py-16">
+  <h3 class="text-3xl font-bold mb-4">Start Your Journey Today</h3>
+  <a href="https://forms.gle/xLFyNXyC7ZxAVRTh6" class="bg-yellow-400 px-6 py-3 rounded-lg font-bold hover:opacity-90">Apply Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="bg-black text-white py-10 text-center">
+  <p>Tonk, Rajasthan</p>
+  <p>9079205366 | 8905220266</p>
+</footer>
+
+<script>
+const countdown = document.getElementById('countdown');
+const targetDate = new Date('April 12, 2026 09:00:00').getTime();
+setInterval(() => {
+  const now = new Date().getTime();
+  const diff = targetDate - now;
+  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const m = Math.floor((diff / (1000 * 60)) % 60);
+  const s = Math.floor((diff / 1000) % 60);
+  countdown.innerHTML = `${d}d ${h}h ${m}m ${s}s`;
+}, 1000);
+
+// Form redirect
+const form = document.getElementById('admissionForm');
+if(form){
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('successMsg').classList.remove('hidden');
+  setTimeout(()=>{
+    window.open('https://forms.gle/xLFyNXyC7ZxAVRTh6','_blank');
+  },1000);
+});
+}
+</script>
+
+</body>
+</html>
