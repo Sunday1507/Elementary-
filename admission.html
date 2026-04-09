@@ -7,18 +7,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    .fade-in{
-      animation: fadeIn 1s ease-in-out;
+    .hover-card{
+      transition: all 0.3s ease;
     }
-    @keyframes fadeIn{
-      from{opacity:0; transform:translateY(20px)}
-      to{opacity:1; transform:translateY(0)}
-    }
-
-    .hover-input:focus{
-      outline: none;
-      border-color: #134c73;
-      box-shadow: 0 0 0 2px rgba(19,76,115,0.2);
+    .hover-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
   </style>
 </head>
@@ -40,81 +34,91 @@
 </header>
 
 <!-- HERO -->
-<section class="text-center py-16 fade-in">
+<section class="text-center py-16">
   <h2 class="text-4xl md:text-5xl font-bold mb-4">
-    Admission Form
+    Admission Open
   </h2>
   <p class="text-gray-600">
-    Fill your details and start your journey with ESA
+    Join Elementary Science Academy and start your success journey
   </p>
 </section>
 
-<!-- FORM -->
-<section class="max-w-3xl mx-auto px-6 pb-16">
+<!-- ABOUT -->
+<section class="max-w-5xl mx-auto px-6 py-10">
+  <h3 class="text-3xl font-bold mb-6 text-center">About Our Institute</h3>
+  <p class="text-gray-700 text-center leading-relaxed">
+    Elementary Science Academy is a leading coaching institute in Tonk
+    providing preparation for JEE, NEET, CUET, Olympiads, NDA and Board Exams.
+    We focus on concept clarity, regular testing, and personal mentorship to
+    help every student achieve their best performance.
+  </p>
+</section>
 
-  <form class="bg-gray-100 p-6 rounded-xl shadow space-y-5">
+<!-- WHY CHOOSE US -->
+<section class="max-w-6xl mx-auto px-6 py-12">
+  <h3 class="text-3xl font-bold text-center mb-10">Why Take Admission?</h3>
 
-    <!-- Name -->
-    <div>
-      <label class="font-semibold">Student Name</label>
-      <input type="text" placeholder="Enter your name"
-        class="w-full p-3 border rounded hover-input">
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold mb-2">Expert Guidance</h4>
+      <p class="text-gray-600">Learn from experienced faculty focused on results.</p>
     </div>
 
-    <!-- Phone -->
-    <div>
-      <label class="font-semibold">Phone Number</label>
-      <input type="tel" placeholder="Enter phone number"
-        class="w-full p-3 border rounded hover-input">
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold mb-2">Regular Testing</h4>
+      <p class="text-gray-600">Weekly tests with performance analysis.</p>
     </div>
 
-    <!-- Class -->
-    <div>
-      <label class="font-semibold">Class</label>
-      <select class="w-full p-3 border rounded hover-input">
-        <option>Select Class</option>
-        <option>9th</option>
-        <option>10th</option>
-        <option>11th</option>
-        <option>12th</option>
-      </select>
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold mb-2">Personal Mentorship</h4>
+      <p class="text-gray-600">Individual attention for every student.</p>
     </div>
 
-    <!-- Course -->
-    <div>
-      <label class="font-semibold">Course</label>
-      <select class="w-full p-3 border rounded hover-input">
-        <option>Select Course</option>
-        <option>JEE</option>
-        <option>NEET</option>
-        <option>Olympiad</option>
-        <option>RBSE</option>
-        <option>CBSE</option>
-        <option>CUET</option>
-      </select>
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold mb-2">Scholarship Opportunity</h4>
+      <p class="text-gray-600">Up to 90% scholarship through ESAT.</p>
     </div>
 
-    <!-- School -->
-    <div>
-      <label class="font-semibold">School Name</label>
-      <input type="text" placeholder="Enter school name"
-        class="w-full p-3 border rounded hover-input">
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold mb-2">Complete Preparation</h4>
+      <p class="text-gray-600">Boards + Competitive exams under one roof.</p>
     </div>
 
-    <!-- Button -->
-    <button
-      class="w-full bg-yellow-400 p-3 rounded font-bold hover:opacity-90 transition">
-      Submit Application
-    </button>
+    <div class="p-6 border rounded-xl text-center hover-card">
+      <h4 class="font-bold mb-2">Proven Results</h4>
+      <p class="text-gray-600">Consistent performance of our students.</p>
+    </div>
 
-  </form>
+  </div>
+</section>
 
+<!-- ADMISSION CTA -->
+<section class="text-center py-16 bg-gray-100">
+  <h3 class="text-3xl font-bold mb-4">Apply for Admission</h3>
+  <p class="text-gray-600 mb-6">
+    Click below to fill the admission form and secure your seat
+  </p>
+
+  <a href="https://forms.gle/QdmEXC6hjoVWfAVW7"
+     target="_blank"
+     class="bg-yellow-400 px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90">
+     Apply Now
+  </a>
+</section>
+
+<!-- CONTACT -->
+<section class="text-center py-12">
+  <h3 class="text-3xl font-bold mb-4">For Enquiries</h3>
+  <p class="text-gray-700">📞 9079205366 | 8905220266</p>
+  <p class="text-gray-700 mt-2">
+    📍 3rd Floor, Jio Office Building, Near Emmanuel School, Tonk (Raj.)
+  </p>
 </section>
 
 <!-- FOOTER -->
 <footer class="bg-black text-white py-10 text-center">
-  <p>Tonk, Rajasthan</p>
-  <p>9079205366 | 8905220266</p>
+  <p>Elementary Science Academy</p>
 </footer>
 
 </body>
