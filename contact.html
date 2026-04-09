@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - ESA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .hover-card{
+      transition: all 0.3s ease;
+    }
+    .hover-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black">
+
+<!-- Navbar -->
+<header class="sticky top-0 bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl" style="color:#134c73">
+      Elementary Science Academy
+    </h1>
+    <nav class="hidden md:flex gap-6">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html" class="font-bold">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="text-center py-16">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    Contact Us
+  </h2>
+  <p class="text-gray-600">
+    Get in touch with us for admission and queries
+  </p>
+</section>
+
+<!-- CONTACT CARDS -->
+<section class="max-w-5xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-6">
+
+  <!-- Phone -->
+  <div class="p-6 border rounded-xl text-center hover-card">
+    <h3 class="font-bold text-lg mb-2">Call Us</h3>
+    <p class="text-gray-600">9079205366</p>
+    <p class="text-gray-600">8905220266</p>
+  </div>
+
+  <!-- Address -->
+  <div class="p-6 border rounded-xl text-center hover-card">
+    <h3 class="font-bold text-lg mb-2">Visit Us</h3>
+    <p class="text-gray-600">
+      3rd Floor, Jio Office Building,<br>
+      Near Emmanuel School,<br>
+      Tonk (Raj.)
+    </p>
+  </div>
+
+  <!-- Social -->
+  <div class="p-6 border rounded-xl text-center hover-card">
+    <h3 class="font-bold text-lg mb-2">Connect</h3>
+    <p class="text-gray-600">@elementaryscienceacademy0012</p>
+  </div>
+
+</section>
+
+<!-- MAP (optional placeholder) -->
+<section class="max-w-5xl mx-auto px-6 pb-16">
+  <div class="w-full h-64 bg-gray-200 rounded-xl flex items-center justify-center">
+    <p class="text-gray-500">Google Map Location (Add later)</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center py-16 bg-gray-100">
+  <h3 class="text-3xl font-bold mb-4">Ready to Join?</h3>
+  <p class="text-gray-600 mb-6">Apply now and secure your seat</p>
+
+  <a href="https://forms.gle/QdmEXC6hjoVWfAVW7"
+     target="_blank"
+     class="bg-yellow-400 px-6 py-3 rounded-lg font-bold hover:opacity-90">
+     Apply for Admission
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white py-10 text-center">
+  <p>Elementary Science Academy</p>
+</footer>
+
+</body>
+</html>
